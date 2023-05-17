@@ -1,7 +1,7 @@
 # AdvisoryAppAssessment
 
 ** PREREQUISITE
-- Install Mysql
+- Install Mysql and configure it
 - Install 'yarn' into library
    - For Windows user, use command: 'npm i -g yarn'
    - For Mac user, use command: 'brew install yarn'
@@ -14,9 +14,11 @@
 3. In the directory '~/\*\*/AdvisoryAppAssessment', create an '.env' file and copy the environemt key from .env.sample
    - (The enviroment PORT can based on user preference, DB_USERNAME and DB_PASSWORD based on the configuration set in MySQL)
 
-4. Enter command: 'yarn dev' to run the program
+4. Enter 'yarn migrate' and 'yarn seed' to tables migration and data seed
 
-5. User can using the Postman to run the API
+5. Enter command: 'yarn dev' to run the program
+
+6. User can using the Postman to run the API
     * ADMIN
     - To login as admin, user can POST method on 'localhost:PORT/api/admin/auth/login'
     (LISTING for ADMIN)
