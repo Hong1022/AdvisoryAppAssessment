@@ -1,0 +1,44 @@
+{
+  "name": "advisory-app-assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lianhong",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "start": "ts-node src/index.ts",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "migrate": "yarn typeorm migration:run",
+    "migrate:revert": "yarn typeorm migration:revert",
+    "migrate:gen": "yarn typeorm migration:generate -n",
+    "seed": "ts-node -r tsconfig-paths/register ./node_modules/typeorm-seeding/dist/cli.js seed",
+    "seed:create": "yarn ts-node scripts/typeorm-generate-seed"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "passport-jwt": "^4.0.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.45",
+    "typeorm-seeding": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.1.5",
+    "dotenv": "^16.0.3",
+    "dotenv-expand": "^10.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4"
+  }
+}
