@@ -20,19 +20,19 @@
 
 6. User can using the Postman to run the API
     * ADMIN
-    - To login as admin, user can POST method on 'localhost:PORT/api/admin/auth/login'
+    - To login as admin, user can POST method on 'http://localhost:PORT/api/admin/auth/login'
     (LISTING for ADMIN)
     - * All the APIs below need to set the Bearer Token at Authorization Header
-    - To view all listing, user can GET method on 'localhost:PORT/api/listing/get-all'
-    - To create listing, user can PUT method on 'localhost:PORT/api/listing/create'
-    - To update listing, user can POST method on 'localhost:PORT/api/listing/update'
-    - To delete listing, user can DELETE method on 'localhost:PORT/api/listing/delete'
+    - To view all listing, user can GET method on 'http://localhost:PORT/api/listing/get-all'
+    - To create listing, user can PUT method on 'http://localhost:PORT/api/listing/create'
+    - To update listing, user can POST method on 'http://localhost:PORT/api/listing/update'
+    - To delete listing, user can DELETE method on 'http://localhost:PORT/api/listing/delete'
 
     * USER
     - To login as user, user can GET method on 'http://localhost:PORT/api/user/auth/login'
     (LISTING for ADMIN)
     - * All the APIs below need to set the Bearer Token at Authorization Header
-    - To view all listing, user can GET method on 'localhost:PORT/api/listing/get?currentLongitude=* *longitude* *&currentLatitude=* *latitude* *'
+    - To view all listing, user can GET method on 'http://localhost:PORT/api/listing/get?currentLongitude=* *longitude* *&currentLatitude=* *latitude* *'
     - * *longitude* * is user current longitude; * *latitude* * is is user current latitude (since mobile app will retreive the values and send to Banckend)
 
     * NOTE: PORT is the port number that configure in .env file
